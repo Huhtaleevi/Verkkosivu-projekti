@@ -1,0 +1,123 @@
+
+h3 {
+    font-family: "Bree Serif", serif;
+    color: #F9FBF7;
+   
+}
+
+header h1 {
+    font-family: "Bree Serif", serif;
+    color: #2F3234;
+   
+}
+
+
+div.ekaalue a, div.ekaalue a:visited, div.ekaalue a:active {
+    text-decoration: none;
+    color: #F9FBF7;
+    font-family: "Bree Serif", serif;
+    font-size: 32px;
+}
+
+div.ekaalue a:hover {
+    
+    text-decoration: underline;
+}
+
+ 
+ div.ekaalue .col-md-6 {
+    padding-top: 20px;
+}
+
+
+
+
+
+.ekaalue {
+    background-color: #B40614;
+    height: 368px;
+
+}
+
+.tokaalue {
+    background-color: #F9FBF7;
+    height: 368px;
+    
+
+}
+
+div.tokaalue h1 {
+    margin-top: 100px;
+    
+    
+   
+}
+
+div.tokaalue img.kebabkuva {
+    margin-top: 60px;
+   
+   
+   
+  
+   
+}
+
+div.tokaalue img.pizzakuva {
+    margin-top: 35px;
+   
+  
+   
+}
+
+div.navigointi li{
+    display: inline;
+    text-decoration: none;
+    font-family: "Bree Serif", serif;
+    font-size: 32px;
+    color: #F9FBF7;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+   
+   
+}
+
+div.navigointi li a, div.navigointi li a:visited, div.navigointi li a:active {
+    text-decoration: none;
+    color: #F9FBF7;
+    text-align: center;
+   
+}
+
+div.navigointi li a:hover {
+    text-decoration: underline;
+   
+}
+
+div.navigointi ul {
+    text-align: center;
+   padding-top: 20px;
+    padding-bottom: 20px;
+   
+   
+}
+
+div.navigointi {
+    background-color: #2F3234;
+   
+   
+   
+}
+
+
+article {
+    background-color: #34912A;
+    height: 1000px;
+    margin-top: -20px;  
+   
+   
+   
+}
+
+
