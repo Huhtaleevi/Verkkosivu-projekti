@@ -270,5 +270,62 @@ div.somelaatikot div.block img.tiktok {
     margin-right: auto;
 }
 
+.pizza-card {
+  width: 18rem;                 
+  height: 460px;                
+  border-radius: 25px;
+  border: none;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+
+  background-image: url('kuvat/woodbackround.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.pizza-card:hover {
+  outline: 3px solid #2F8DF3;
+  outline-offset: -3px;
+}
+
+.pizza-card .card-body,
+.pizza-card .list-group-item {
+  background: transparent !important;
+}
+
+.pizza-card .list-group,
+.pizza-card .list-group-item {
+  border: none;
+}
+
+.pizza-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+  margin: 0.25rem auto 0.5rem auto;
+  border-radius: 50%;
+}
+
+.pizza-card .card-title {
+  font-family: "Bree Serif", serif;
+  color: #2F3234;        
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+.pizza-card hr {
+  border: 2px solid #2F3234;
+  opacity: 1;
+  margin: 0.75rem 0;
+}
+
+.pizza-card p,
+.pizza-card .ainesosat {
+  font-family: "Bree Serif", serif;
+  color: #2F3234;        
+  font-size: 1.1rem;
+}
+
 
 
