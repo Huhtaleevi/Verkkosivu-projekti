@@ -72,43 +72,63 @@ div.tokaalue img.pizzakuva {
    
 }
 
-div.navigointi li{
-    display: inline;
-    text-decoration: none;
-    font-family: "Bree Serif", serif;
-    font-size: 32px;
-    color: #F9FBF7;
-    text-align: center;
+div.navigointi ul {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    list-style: none;
+    margin: 0;
+    padding: 20px 0;
+    
+}
+
+div.navigointi li:nth-child(1) {
+    text-align: right;
+    
+    padding-bottom: 20px;
     margin-left: 150px;
     margin-right: 150px;
-    
-   
-   
 }
 
-div.navigointi li a, div.navigointi li a:visited, div.navigointi li a:active {
+div.navigointi li:nth-child(2) {
+    text-align: center;
+    padding-bottom: 20px;
+   margin-left: 150px;
+    margin-right: 150px;
+}
+
+div.navigointi li:nth-child(3) {
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-bottom: 20px;
+}
+
+div.navigointi a {
     text-decoration: none;
     color: #F9FBF7;
-    text-align: center;
-   
+    font-family: "Bree Serif", serif;
+    font-size: 32px;
 }
 
-div.navigointi li a:hover {
+div.navigointi a:hover {
     text-decoration: underline;
-   text-align: center;
 }
 
 div.navigointi ul {
-    text-align: center;
-   padding-top: 20px;
-    padding-bottom: 20px;
-   
-   
+    padding-left: 0;
 }
+
+
+
+
+
 
 div.navigointi {
     background-color: #2F3234;
    text-align: center;
+   
    
    
 }
@@ -269,6 +289,66 @@ div.somelaatikot div.block img.tiktok {
    margin-left: auto;
     margin-right: auto;
 }
+
+
+footer {
+    background-color: #2F3234;
+    height: 327px;
+    margin-top: 40px;
+   
+}
+
+footer p {
+    font-family: "Bree Serif", serif;
+    color: #F9FBF7;
+    font-size: 20px;
+    text-align: center;
+    
+   
+}
+
+footer a, footer a:visited, footer a:active {
+    text-decoration: none;
+    color: #F9FBF7;
+    font-family: "Bree Serif", serif;
+    font-size: 20px;
+    text-align: center;
+
+   
+}   
+
+footer li {
+    text-decoration: none;
+    font-family: "Bree Serif", serif;
+    font-size: 20px;
+    color: #F9FBF7;
+    text-align: center;
+    list-style-type: none;
+    
+   
+   
+}
+
+.footerlaatikko {
+    
+    padding-top: 75px;
+   
+    
+   
+   
+}
+
+footer a:hover {
+    text-decoration: underline;
+   
+}
+
+footer ul {
+    padding-top: 25px;
+   
+}
+
+
 
 
 
