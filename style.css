@@ -1,3 +1,6 @@
+header {
+    text-align: center;
+}
 
 h3 {
     font-family: "Bree Serif", serif;
@@ -92,7 +95,7 @@ div.navigointi li a, div.navigointi li a:visited, div.navigointi li a:active {
 
 div.navigointi li a:hover {
     text-decoration: underline;
-   
+   text-align: center;
 }
 
 div.navigointi ul {
@@ -105,7 +108,7 @@ div.navigointi ul {
 
 div.navigointi {
     background-color: #2F3234;
-   
+   text-align: center;
    
    
 }
@@ -113,11 +116,159 @@ div.navigointi {
 
 article {
     background-color: #34912A;
-    height: 1000px;
+    height: 2000px;
     margin-top: -20px;  
    
    
+}
+
+h2 {
+    font-family: "Bree Serif", serif;
+    color: #F9FBF7;
+    padding-top: 20px;
+   text-align: center;
+   padding-bottom: 20px;
+   padding-top: 40px;
+}
+
+div.laatikko1 {
+    border-radius: 25px;
+  background-color: #F9FBF7;
+  
+  width: 500px;
+  height: 470px; 
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+}
+
+div.sisalla {
+    
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p {
+    font-family: "Bree Serif", serif;
+    color: #2F3234;
+    
+    font-size: 24px;
    
 }
+
+hr {
+    border: 2px solid #2F3234;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    opacity: 1;
+    
+    
+}
+
+div.sisalla h3 {
+    font-family: "Bree Serif", serif;
+    color: #2F3234;
+    
+    font-size: 28px;
+    text-align: center;
+}
+
+div.sisalla img {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    
+   
+   
+}
+
+div.laatikko2 {
+    border-radius: 25px;
+  background-color: #F9FBF7;
+  
+  width: 1400px;
+  height: 450px; 
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+div.sisalla2 {
+    
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}   
+
+div.sisalla2 p {
+    font-family: "Bree Serif", serif;
+    color: #2F3234;
+    
+    font-size: 24px;
+    text-align: center;
+    
+   
+}
+
+article h2 {
+    padding-top: 100px;
+}
+
+.block {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: #F9FBF7;
+  border-radius: 25px;
+margin: 20px;
+float: none;
+vertical-align: top;
+
+}
+
+
+.somelaatikot {
+    text-align: center;
+   
+}
+
+
+div.somelaatikot div.block img.instagram {
+    display: block;
+   margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 120px;
+  
+   
+}
+
+div.somelaatikot div.block img.facebook {
+   
+    width: 200px;
+    height: 200px;
+    display: block;
+   
+   margin-left: auto;
+    margin-right: auto;
+}
+
+div.somelaatikot div.block img.tiktok {
+   
+    width: 200px;
+    height: 200px;
+    display: block;
+   
+   margin-left: auto;
+    margin-right: auto;
+}
+
 
 
