@@ -4,15 +4,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HAMK Pizza Kebab</title>
+    <title>HAMK Pizza Kebab – Yhteystiedot</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
-
-
-
 <body>
-    
+
+<header>
+
+    <div class="ekaalue">
+        <div class="row">
+
+            <div class="col-md-3"></div>
+
+            <div class="col-md-6">
+                <img src="kuvat/ChatGPT Image Jan 22, 2026 at 03_57_47 AM 1.png" 
+                     alt="Logo" class="mx-auto d-block">
+            </div>
+
+            <div class="col-md-3">
+                <img src="kuvat/kuva 4.png" alt="Ostoskori" class="rounded float-end">
+                <div class="text-end">
+                    <a href="ruokalista.html">Tilaa</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="navigointi">
+        <nav>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="ruokalista.html">Ruokalista</a></li>
+                <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+
+<article>
+
+    <div class="contact-section">
+
+        <div class="contact-header">
+            <h2>Yhteydenotto</h2>
+            <p>
+                Visamäentie 13, 13600 Hämeenlinna<br>
+                +358 50 5353535
+            </p>
+        </div>
+
+        <div class="contact-content">
+
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.123456789!2d24.457!3d60.995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sVisam%C3%A4entie%2013%2C%2013600%20H%C3%A4meenlinna!5e0!3m2!1sfi!2sfi!4v0000000000000"
+                    width="100%"
+                    height="300"
+                    style="border:0;"
+                    loading="lazy"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="contact-form">
+                <form>
+
+                    <label for="name">Nimi</label>
+                    <input type="text" id="name" name="name" placeholder="Nimesi">
+
+                    <label for="email">Sähköpostiosoite</label>
+                    <input type="email" id="email" name="email" placeholder="sähköpostisi@esimerkki.fi">
+
+                    <label for="message">Viestisi</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Kirjoita viestisi tähän"></textarea>
+
+                    <button type="submit">Lähetä</button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</article>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
