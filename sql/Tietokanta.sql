@@ -1,0 +1,8 @@
+CREATE DATABASE HAMKpizzakebab;
+CREATE TABLE yhteydenotto (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nimi VARCHAR(100) NOT NULL,
+    sahkoposti VARCHAR(150) NOT NULL,
+    viesti TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
