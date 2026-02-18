@@ -9,14 +9,13 @@ $viesti = isset($_POST["viesti"]) ? $_POST["viesti"] : "";
 # Jos joku tiedoista puuttuu -> Takaisin lomakkeelle
 if (empty($nimi) || empty($sahkoposti) || empty($viesti)) {
     header("Location: yhteystiedot.html");
+    exit;
 }
 
-$sql = "INSERT INTO yhteydenotto (nimi, sahkoposti, viesti) VALUES (?, ?, ?)";
+$sql = "INSERT INTO yhteydenotto (nimi, sposti, viesti) VALUES (?, ?, ?)";
 
 $stmt = mysqli_prepare($yhteys, $sql);
-
 mysqli_stmt_bind_param($stmt, 'sss', $nimi, $sahkoposti, $viesti);
-
 mysqli_stmt_execute($stmt);
 
 mysqli_close($yhteys);
