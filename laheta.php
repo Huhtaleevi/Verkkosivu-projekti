@@ -1,4 +1,5 @@
 <?php
+# Tietokantayhteys
 require 'tietokanta.php';
 
 # Luetaan lomakkeen tiedot.
@@ -15,12 +16,14 @@ if (empty($nimi) || empty($sahkoposti) || empty($viesti)) {
 # SQL-lause mikä lisää uuden viestin tietokantaan
 $sql = "INSERT INTO yhteydenotto (nimi, sposti, viesti) VALUES (?, ?, ?)";
 
+# Valmistellaan SQL-lause ja yhdistetään viestin tiedot siihen.
 $stmt = mysqli_prepare($yhteys, $sql);
 mysqli_stmt_bind_param($stmt, 'sss', $nimi, $sahkoposti, $viesti);
 mysqli_stmt_execute($stmt);
 
 mysqli_close($yhteys);
 
+# Ohjataan käyttäjä takaisin sivulle.
 header("Location: yhteystiedot.html");
 exit;
 ?>
