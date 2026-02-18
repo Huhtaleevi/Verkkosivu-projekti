@@ -1,5 +1,5 @@
 <?php
-require 'db.php';
+require 'tietokanta.php';
 
 # Luetaan lomakkeen tiedot.
 $nimi = isset($_POST["nimi"]) ? $_POST["nimi"] : "";
@@ -11,7 +11,6 @@ if (empty($nimi) || empty($sahkoposti) || empty($viesti)) {
     header("Location: yhteystiedot.html");
 }
 
-# SQL-lause
 $sql = "INSERT INTO yhteydenotto (nimi, sahkoposti, viesti) VALUES (?, ?, ?)";
 
 $stmt = mysqli_prepare($yhteys, $sql);
