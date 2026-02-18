@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style_yhteystiedot.css">
 </head>
 
@@ -39,8 +39,6 @@
   
   </div>
 </div>
-
-
 
 
 <div class="tokaalue">
@@ -79,14 +77,6 @@
 </div>
 </div>
 
-
-
-
-
-
-
-
-
 </header>
 
 
@@ -108,16 +98,16 @@
             </div>
 
             <div class="contact-form">
-                <form>
+                <form action="laheta.php" method="post">
 
                     <label for="name">Nimi</label>
-                    <input type="text" id="name" name="name" placeholder="Nimesi">
+                    <input type="text" id="name" name="nimi" placeholder="Nimesi">
 
                     <label for="email">Sähköpostiosoite</label>
-                    <input type="email" id="email" name="email" placeholder="sähköpostisi@esimerkki.fi">
+                    <input type="email" id="email" name="sahkoposti" placeholder="sähköpostisi@esimerkki.fi">
 
                     <label for="message">Viestisi</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Kirjoita viestisi tähän"></textarea>
+                    <textarea id="message" name="viesti" rows="5" placeholder="Kirjoita viestisi tähän"></textarea>
 
                     <button type="submit">Lähetä</button>
 
@@ -160,23 +150,11 @@
       <li><p><i class="fa-regular fa-envelope" style="color: #F9FBF7; font-size: 15px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;support.hamk@gmail.com</p></li>
       <li><p><i class="fa-solid fa-location-dot" style="color: #F9FBF7; font-size: 15px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Visamäentie 13, 13600 Hämeenlinna</p></li>
       
-    
-    
     </ul>
     </div>
 
 </div>
 </div>
-
-
-
-
-    
-
-
-
-    
-
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
