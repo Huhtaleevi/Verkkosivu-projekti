@@ -35,7 +35,7 @@ mysqli_close($yhteys);
 
 # Ohjataan takaisin sivulle (vaihda tarvittaessa)
 # Voit lisätä viestin queryyn: ?msg=Rivi%20poistettu
-header('Location: yhteystiedot.html');
+header('Location: admin.php');
 exit;
 
 ?>
