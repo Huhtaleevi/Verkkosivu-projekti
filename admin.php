@@ -1,4 +1,10 @@
 <?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+?>
+
+
+<?php
 
 // Yhdistetään tietokantaan tietokantatiedoston avulla
 require 'tietokanta.php';

@@ -1,6 +1,6 @@
 <Files "admin.php">
     AuthType Basic
     AuthName "Admin-suojaus"
-    AuthUserFile "/var/www/html/Verkkosivu-projekti/.htpasswd"
+    AuthUserFile "/home/amk1013537/public_html/Verkkosivu-projekti/.htpasswd"
     Require valid-user
 </Files>
