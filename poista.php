@@ -28,8 +28,7 @@ mysqli_stmt_execute($stmt);
 # Suljetaan yhteys
 mysqli_close($yhteys);
 
-# Ohjataan takaisin sivulle (vaihda tarvittaessa)
-# Voit lisätä viestin queryyn: ?msg=Rivi%20poistettu
+# Ohjataan takaisin sivulle
 header('Location:./admin.php');
 exit;
 
