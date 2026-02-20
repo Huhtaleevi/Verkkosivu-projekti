@@ -9,7 +9,6 @@ $poistettava = isset($_GET['poistettava']) ? $_GET['poistettava'] : '';
 
 # Jos id puuttuu tai ei ole kelvollinen kokonaisluku -> takaisinohjaus
 if (empty($poistettava) || !ctype_digit($poistettava)) {
-    # Vaihda halutuksi sivuksi, esim. listaus- tai yhteydenottosivu
     header('Location: yhteystiedot.html');
     exit;
 }
