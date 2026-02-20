@@ -9,7 +9,6 @@ $poistettava = isset($_GET['poistettava']) ? $_GET['poistettava'] : '';
 
 # Jos id puuttuu tai ei ole kelvollinen kokonaisluku -> takaisinohjaus
 if (empty($poistettava) || !ctype_digit($poistettava)) {
-    # Vaihda halutuksi sivuksi, esim. listaus- tai yhteydenottosivu
     header('Location: yhteystiedot.html');
     exit;
 }
@@ -24,14 +23,11 @@ mysqli_stmt_bind_param($stmt, 'i', $poistettava);
 # Suoritetaan poisto
 mysqli_stmt_execute($stmt);
 
-# (Valinnainen) Voit tarkistaa vaikuttiko poisto:
-# $poistettuja = mysqli_stmt_affected_rows($stmt);
 
 # Suljetaan yhteys
 mysqli_close($yhteys);
 
-# Ohjataan takaisin sivulle (vaihda tarvittaessa)
-# Voit lisätä viestin queryyn: ?msg=Rivi%20poistettu
+# Ohjataan takaisin sivulle
 header('Location:./admin.php');
 exit;
 
