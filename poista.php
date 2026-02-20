@@ -24,8 +24,6 @@ mysqli_stmt_bind_param($stmt, 'i', $poistettava);
 # Suoritetaan poisto
 mysqli_stmt_execute($stmt);
 
-# (Valinnainen) Voit tarkistaa vaikuttiko poisto:
-# $poistettuja = mysqli_stmt_affected_rows($stmt);
 
 # Suljetaan yhteys
 mysqli_close($yhteys);
