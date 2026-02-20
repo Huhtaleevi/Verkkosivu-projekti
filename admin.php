@@ -83,6 +83,21 @@ h1 {
     background-color: #a71d2a;
 }
 
+.wordlinkki, .wordlinkki:hover, .wordlinkki:active, .wordlinkki:visited {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.wordlinkki:hover {
+    text-decoration: underline;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
 </style>
 
 
@@ -117,6 +132,9 @@ h1 {
 
 </div>
 
+<h1>Linkki dokumentaatioon<h1>
+    <a class="wordlinkki" href="https://hameenamk-my.sharepoint.com/:w:/g/personal/amk1013537_student_hamk_fi/IQBaBcGs_S2jTIs571JUQV18AXLtJB4RGjhJscUp4SaknS8?rtime=0GuCsANw3kg">
 
+    
 <!-- Suljetaan tietokantayhteys, kun kaikki tiedot on haettu -->
 <?php mysqli_close($yhteys); ?>
