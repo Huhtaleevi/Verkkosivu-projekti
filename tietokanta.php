@@ -1,23 +1,23 @@
 <?php
 
-// Asetetaan MySQLi heittämään virheet poikkeuksina,
-// jotta mahdolliset tietokantavirheet voidaan käsitellä try-catch -rakenteella.
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-// Luodaan yhteys MySQL-tietokantaan. Parametrit: palvelin, käyttäjätunnus, salasana, tietokannan nimi
 try {
+
+    // Luetaan asetukset ini-tiedostosta
+    $initials = parse_ini_file("./.ht.asetukset.ini");
+
+    // Luodaan tietokantayhteys ini-tiedoston arvoilla
     $yhteys = mysqli_connect(
-        "localhost",        
-        "amk1013537",       
-        "44wG2Ygv",         
-        "wp_amk1013537"     
+        $initials["databaseserver"],
+        $initials["username"],
+        $initials["password"],
+        $initials["database"]
     );
 
-// Asetetaan merkistökoodaukseksi utf8mb4, jotta ääkköset ja erikoismerkit toimivat oikein.
     mysqli_set_charset($yhteys, "utf8mb4");
 
-// Jos yhteys epäonnistuu, ohjelma pysäytetään ja näytetään virheilmoitus
 } catch (Exception $e) {
-    die("Tietokantayhteys epäonnistui: " . $e->getMessage());
+    die("Tietokantayhteys epäonnistui.");
 }
 ?>
