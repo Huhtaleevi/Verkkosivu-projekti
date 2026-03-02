@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.3
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: db
--- Generation Time: Feb 17, 2026 at 11:21 AM
--- Server version: 8.0.34
--- PHP Version: 8.3.26
+-- Host: localhost
+-- Generation Time: Mar 02, 2026 at 03:56 PM
+-- Server version: 8.0.42-0ubuntu0.20.04.1
+-- PHP Version: 8.0.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `HAMKpizzakebab`
+-- Database: `wp_amk1013537`
 --
 
 -- --------------------------------------------------------
@@ -30,10 +30,19 @@ SET time_zone = "+00:00";
 CREATE TABLE `yhteydenotto` (
   `id` int NOT NULL,
   `nimi` varchar(100) NOT NULL,
-  `sposti` varchar(150) NOT NULL,
+  `sposti` varchar(200) NOT NULL,
   `viesti` text NOT NULL,
   `lahetetty` timestamp NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+--
+-- Dumping data for table `yhteydenotto`
+--
+
+INSERT INTO `yhteydenotto` (`id`, `nimi`, `sposti`, `viesti`, `lahetetty`) VALUES
+(1, 'Leevi Huhta', 'leevi.huhta@gmail.com', 'Tosi hyvää pizzaa!', '2026-02-19 18:59:09'),
+(6, 'Pentti Ojaniemi', 'pentti.ojaniemi@gmail.com', 'Tosi hyvää pizzaa, mutta erittäin ruma sivusto. ', '2026-02-19 19:38:44'),
+(7, 'Tuomas', 'tuomas.hartikainen@student.hamk.fi', 'Ihan hyvää oli, mutta tarjoilija kosketteli mun jalkaa oudosti.....', '2026-02-19 19:44:58');
 
 --
 -- Indexes for dumped tables
@@ -53,7 +62,7 @@ ALTER TABLE `yhteydenotto`
 -- AUTO_INCREMENT for table `yhteydenotto`
 --
 ALTER TABLE `yhteydenotto`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
