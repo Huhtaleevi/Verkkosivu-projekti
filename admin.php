@@ -133,7 +133,7 @@ h1 {
 </div>
 
 <h1>Linkki dokumentaatioon<h1>
-    <a class="wordlinkki" href="https://hameenamk-my.sharepoint.com/:w:/g/personal/amk1013537_student_hamk_fi/IQBaBcGs_S2jTIs571JUQV18AXLtJB4RGjhJscUp4SaknS8?rtime=0GuCsANw3kg">
+    <a class="wordlinkki" href="https://hameenamk-my.sharepoint.com/:w:/g/personal/amk1013537_student_hamk_fi/IQBaBcGs_S2jTIs571JUQV18ARHZsvSmdeCmAC-efTib7rI?e=QCmphz">Linkki dokumentaatioon</a>
 
     
 <!-- Suljetaan tietokantayhteys, kun kaikki tiedot on haettu -->
